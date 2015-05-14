@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SNAKE CANVAS</title>
+	<meta charset="UTF-8"/>
+
+	<!-- Insert JQuery Lib -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Insert JavaScript -->
+	<script src="snakescripts.js"> </script>
+
+	<!-- Insert CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="snakestyle.css"> -->
+
+	<style type="text/css">
+		.main-container{
+			width:320px;
+			height:320px;
+			background-color: #CCFFCC;
+			margin:auto;
+		}
+
+		div.square {
+			box-sizing:border-box;
+			width:20px;
+			height:20px;
+			background-color: #000000;
+			float:left;
+			border: 1px solid white;
+			/*visibility: hidden;*/
+		}
+
+		#coord11 {
+			visibility: hidden;
+		}
+
+		div.debug-info {
+			width:250px;
+			float:left;
+		}
+
+		div.controls {
+			padding:40px;
+			float:left;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+	</style>
+
+</head>
+<body>
+<h1> Renders a N by N canvas to play the snake game </h1>	
+
+<div class="main-container">
+<!-- JQuery fill in N^2 div's class="square" -->
+</div>
+
+
+<div class="debug-info">
+	<p id="demo"> </p>
+
+	<p id="vector"> </p>
+
+	<p id="time-step"> </p> 
+</div>
+
+<div class="controls">
+	<p>DIRECTIONS --> i: UP | j:LEFT | k:DOWN | L:RIGHT</p>
+	<p>FEATURES   --> w: FOOD | R: reset 
+</div>
+<div class="clear"></div>
+
+</body>
+</html>
